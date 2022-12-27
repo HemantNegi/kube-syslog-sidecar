@@ -1,6 +1,7 @@
-FROM alpine:3.6
+ARG ARCH
+FROM ${ARCH}alpine:3.17.0
 
-MAINTAINER Arve Knudsen <arve.knudsen@gmail.com>
+MAINTAINER Hemant Negi <hemant.frnz@gmail.com>
 
 RUN apk update && apk add --no-cache syslog-ng
 
